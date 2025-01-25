@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>LifeHub</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <div class="nav-bar">
+      <button class="nav-button" id="home-btn">Home</button>
+      <button class="nav-button" id="weather-btn">Weather</button>
+      <button class="nav-button" id="quiz-btn">Quiz</button>
+      <button class="nav-button" id="quotes-btn">Motivational Quotes</button>
+    </div>
+  </header>
+  <section id="home-page" class="page">
+    <div class="home-container">
+      <h2>Welcome to LifeHub!</h2>
+      <p> personal dashboard for wellness, weather, and motivation.</p>
+      <div class="home-image">
+        <img src="lifehub.png" alt="LifeHub Image">
+      </div>
+    </div>
+  </section>
+  <section id="weather-page" class="page">
+    <h2>Weather</h2>
+    <div id="weather-info">
+      <p id="weather-description">Loading...</p>
+      <p id="temperature">Loading...</p>
+    </div>
+  </section>
+  <section id="quiz-page" class="page">
+    <h2>Your Wellness Quiz</h2>
+    <form id="quiz-form">
+      <label for="exercise">How often do you exercise?</label>
+      <select id="exercise">
+        <option value="daily">Daily</option>
+        <option value="few-times-week">Few times a week</option>
+        <option value="rarely">Rarely</option>
+      </select>
+
+      <label for="stress">How stressed do you feel?</label>
+      <select id="stress">
+        <option value="high">High</option>
+        <option value="moderate">Moderate</option>
+        <option value="low">Low</option>
+      </select>
+
+      <button type="submit">Submit</button>
+    </form>
+
+    <div id="quiz-results">
+      <h3>Your Results:</h3>
+      <p id="wellness-tip">Please take the quiz to get personalized wellness tips.</p>
+    </div>
+  </section>
+  <section id="quotes-page" class="page">
+    <h2>Motivational Quotes</h2>
+    <div id="carousel">
+      <button id="prev-quote">Previous</button>
+      <div id="quote-container">
+        <p id="quote-text">Loading...</p>
+      </div>
+      <button id="next-quote">Next</button>
+    </div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
